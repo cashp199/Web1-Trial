@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+  <title>WEB1 - html</title>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <h1><a href="index.html">WEB</a></h1>
+  <ol>
+    <li> <a href="1.html">HTML</a></li>
+    <li><a href="2.html">CSS</a></li>
+    <li><a href="3.html">JavaScript</a></li>
+  </ol>>
+
+<h2><a href="https://source.android.com/compatibility/cdd" target="_blank"
+  title="android CDD page">Gesture in Q</a> 에는 무었이 들어가는가 </h2>
+2.2 Handheld Requirements<br><br> If the <strong><u>navigatio</u>n function
+</strong> is provided as an on-screen gesture-based action:<br>
+● [ 7.2 .3/H] The gesture recognition zone for the Home function should be no
+higher
+than 32 dp in height from the bottom of the screen.<br>
+If Handheld device implementations provide a navigation function as a
+gesture from anywhere
+on the left and right edges of the screen:<br>
+● [ 7.2 .3/H-0-1] The navigation function's gesture area MUST be less than 40 dp in
+width on each side. The gesture area SHOULD be 24 dp in width by default.<br>
+<img src="coding.jpg" width="100%">
+7.2.3. Navigation Keys<br>
+If the navigation function is provided as an on-screen gesture-based action:
+● [C-6-1] WindowInsets#getMandatorySystemGestureInsets() MUST only be
+used to report the Home gesture recognition area.
+<p>● [C-6-2] Gestures that start within an exclusion rect as provided by the foreground
+application via View#setSystemGestureExclusionRects() , but outside of
+WindowInsets#getMandatorySystemGestureInsets() , MUST NOT be
+intercepted for the navigation function as long as the exclusion rect is allowed
+within the max exclusion limit as specified in the documentation for
+View#setSystemGestureExclusionRects() .</p>
+<p>● [C-6-3] MUST send foreground apps a MotionEvent.ACTION_CANCEL event once
+touches start being intercepted for a system gesture, if they were previously sent
+an MotionEvent.ACTION_DOWN event.</p>
+● [C-6-4] MUST provide a user affordance to switch to an on-screen button-based
+navigation (for example, in Settings)
+</body>
+</html>
